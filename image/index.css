@@ -1,5 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: blue;
-  color: white;
-  font-size: 50px;
+}
+.container {
+  margin: 0 auto;
+  width: 1120px;
+}
+
+.titleAndMore {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 90px;
+}
+
+.titleText {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 350;
+}
+
+.productContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+
+.leftProductBox {
+  position: relative;
+  width: 100%;
+  height: 380px;
+}
+
+.leftProductImg {
+  width: 549px;
+  height: 100%;
+}
+
+.leftTopText {
+  position: absolute;
+  z-index: 1000;
+  left: 30px;
+  bottom: 60px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 350;
+}
+
+.leftBottomText {
+  position: absolute;
+  z-index: 1000;
+  left: 30px;
+  bottom: 20px;
+  font-size: 25px;
+  line-height: 37px;
+  font-weight: 700;
+}
+
+.rightProductContainer {
+  width: 100%;
+  height: 380px;
+  margin-left: 21px;
+}
+
+.rightTopProductBox {
+  padding-bottom: 20px;
+  height: 50%;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.rightBottomProductBox {
+  padding-top: 20px;
+  height: 50%;
+}
+
+.rightProducts {
+  height: 100%;
 }
