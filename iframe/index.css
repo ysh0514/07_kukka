@@ -1,5 +1,64 @@
+@import "../reset.css";
 body {
-  background-color: blue;
+}
+
+.iframeContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.iframeWrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.mainBanner {
+}
+
+.iframeScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1920px;
+  height: 420px;
+  background-position: center;
+  background-size: cover;
+}
+
+.indexWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
-  font-size: 50px;
+  font-size: 16px;
+}
+
+.bannerButton {
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-weight: 100;
+}
+
+.bannerFunction {
+  z-index: 1;
+  position: relative;
+  top: 370px;
+  width: 145px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

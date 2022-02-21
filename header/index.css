@@ -1,5 +1,43 @@
+@import "../reset.css";
 body {
-  background-color: blue;
-  color: white;
-  font-size: 50px;
+  height: 250vh;
+}
+
+.headerContainer {
+  position: fixed;
+  display: flex;
+  width: 1120px;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.1s;
+}
+
+.headerList {
+  display: flex;
+  width: 656px;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.headerList li:hover {
+  position: relative;
+  top: 2px;
+  line-height: 57px;
+  border-bottom: 4px solid #ffca43;
+}
+
+.headerIcon {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hasShadow {
+  transition: all 0.1s;
+  border-bottom: 1px solid #ffca43;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
