@@ -9,9 +9,82 @@
       name="description"
       content="그 시즌 가장 예쁜 꽃을 받아보는 꽃 정기구독. 당일 배송되는 꽃바구니와 전국꽃배달서비스, 꾸까 오프라인 매장에서 진행하는 플라워클래스와 원데이클래스."
     />
-    <link rel="stylesheet" type="text/css" href="footer.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
+    <header class="headerContainer">
+      <div class="headerLogoWrapper">
+        <img
+          class="pcLogo"
+          src="https://user-images.githubusercontent.com/80146176/155058897-587e69cb-f76e-4b21-9534-27b0125e5356.png"
+        />
+        <img
+          class="mobileLogo"
+          src="https://user-images.githubusercontent.com/80146176/155058981-36963ddb-0541-4068-b54c-1ead8730d330.png"
+        />
+        <img
+          class="mediaBucket"
+          src="https://user-images.githubusercontent.com/80146176/154938137-1f3d1b10-f2fa-4ddd-b8e6-2a4e50cc6d05.png"
+          alt="미디어 장바구니"
+        />
+      </div>
+      <ul class="headerList">
+        <li class>꽃 정기구독</li>
+        <li class>꽃다발</li>
+        <li class>당일배송</li>
+        <li class>플라워클래스</li>
+        <li class="mediaHeader">소품샵</li>
+        <li class="mediaHeader">이벤트</li>
+      </ul>
+      <div class="headerIcon">
+        <img
+          src="https://user-images.githubusercontent.com/80146176/154937994-565fb713-9988-42bc-ab59-3211c9e984a0.png"
+          alt="프로필"
+        />
+        <img
+          src="https://user-images.githubusercontent.com/80146176/154938137-1f3d1b10-f2fa-4ddd-b8e6-2a4e50cc6d05.png"
+          alt="장바구니"
+        />
+      </div>
+    </header>
+    <iframe
+      width="1120"
+      height="630"
+      src="https://www.youtube.com/embed/FiZI8xd3qoY"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <div class="popUpContainer">
+      <img
+        class="popUpFirst popUpShown"
+        src="https://user-images.githubusercontent.com/80146176/155068028-9435570a-645a-4424-9783-426269df50d5.jpg"
+        alt="팝업1"
+      />
+      <img
+        class="popUpSecond popUpUnShown"
+        src="https://user-images.githubusercontent.com/80146176/155068113-57779088-2ef1-4aee-875e-d212bc525463.jpg"
+        alt="팝업2"
+      />
+      <img
+        class="popUpThird popUpUnShown"
+        src="https://user-images.githubusercontent.com/80146176/155068157-21f523df-4e14-472b-92cf-90ca4f9d0106.jpg"
+        alt="팝업3"
+      />
+      <div class="popUpButton">
+        <div class="popUpIndex popUpSelected popUpFirstButton"></div>
+        <div class="popUpIndex popUpSecondButton"></div>
+        <div class="popUpIndex popUpThirdButton"></div>
+      </div>
+      <div class="popUpFunction">
+        <div class="popUpNotice">
+          <input class="closeToday" type="checkbox" height="30" width="30" />
+          <span>오늘은 더 이상 보지 않기</span>
+        </div>
+        <span class="popUpClose">X</span>
+      </div>
+    </div>
     <footer class="footer" id="footer">
       <nav class="naviMobile isFlowFooter" id="footerNavMobile">
         <p class="blind">모바일 네비게이션</p>
@@ -110,6 +183,9 @@
         </div>
       </div>
     </footer>
-    <script src="footer.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/popUp.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

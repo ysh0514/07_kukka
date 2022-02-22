@@ -1,0 +1,15 @@
+@import "./styles/reset.css";
+@import "./styles/header.css";
+@import "./styles/iframe.css";
+@import "./styles/popUp.css";
+@import "./styles/footer.css";
+
+body {
+  background-color: white;
+  color: white;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Noto Sans KR", sans-serif, "NanumGothic", "나눔고딕", "Dotum",
+    "돋움", Helvetica, "Apple SD Gothic Neo";
+  backface-visibility: hidden;
+}

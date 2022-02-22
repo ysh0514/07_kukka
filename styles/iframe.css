@@ -1,0 +1,15 @@
+@media screen and (max-width: 1023px) {
+  /* 타블렛 */
+  iframe {
+    width: 853px;
+    height: 480px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* 모바일 */
+  iframe {
+    width: 640px;
+    height: 360px;
+  }
+}

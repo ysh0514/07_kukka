@@ -1,9 +1,6 @@
-@import "../reset.css";
-body {
-  height: 250vh;
-}
-
 .headerContainer {
+  background-color: white;
+  color: black;
   position: fixed;
   display: flex;
   width: 1120px;
@@ -11,6 +8,7 @@ body {
   justify-content: space-between;
   align-items: center;
   transition: all 0.1s;
+  z-index: 5555;
 }
 
 .headerList {
