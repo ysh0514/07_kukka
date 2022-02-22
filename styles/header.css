@@ -1,13 +1,18 @@
-@import "../reset.css";
-body {
-  height: 250vh;
+.headerWidthContainer {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  z-index: 5555;
+  height: 80px;
 }
 
 .headerContainer {
-  position: fixed;
+  color: #222;
   display: flex;
-  width: 1120px;
   height: 80px;
+  width: 1120px;
   justify-content: space-between;
   align-items: center;
   transition: all 0.1s;
@@ -17,6 +22,7 @@ body {
   display: flex;
   width: 656px;
   justify-content: space-between;
+  background-color: white;
   align-items: center;
   align-items: center;
   font-size: 18px;
@@ -28,7 +34,7 @@ body {
 
 .headerList li:hover {
   position: relative;
-  top: 2px;
+  top: 3px;
   line-height: 57px;
   border-bottom: 4px solid #ffca43;
 }
@@ -53,6 +59,7 @@ body {
 .pcLogo {
   display: flex;
   height: 55px;
+  cursor: pointer;
 }
 
 .mobileLogo {
@@ -69,9 +76,7 @@ body {
 
   .headerLogoWrapper {
     width: 100%;
-    padding: 15px 0px;
     display: flex;
-    height: 50px;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(149, 157, 165, 0.2);
@@ -79,6 +84,7 @@ body {
   .mediaBucket {
     display: flex;
     padding-right: 20px;
+    cursor: pointer;
   }
 
   .mediaHeader {
@@ -95,6 +101,7 @@ body {
     height: 20px;
     position: relative;
     padding-left: 20px;
+    cursor: pointer;
   }
   .pcLogo {
     display: none;
@@ -119,12 +126,8 @@ body {
     line-height: 0px;
     border-bottom: none;
   }
-}
-
-@media screen and (max-width: 767px) {
-  /* 모바일 */
-  iframe {
-    width: 640px;
-    height: 360px;
+  .headerScrollList {
+    display: none;
+    border-bottom: none;
   }
 }

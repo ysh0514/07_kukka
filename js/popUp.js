@@ -1,16 +1,15 @@
-console.log("연결");
-const popUpContainer = document.querySelector(".popUpContainer");
+var popUpContainer = document.querySelector(".popUpContainer");
 
-const first = document.querySelector(".popUpFirst");
-const second = document.querySelector(".popUpSecond");
-const third = document.querySelector(".popUpThird");
+var first = document.querySelector(".popUpFirst");
+var second = document.querySelector(".popUpSecond");
+var third = document.querySelector(".popUpThird");
 
-const firstButton = document.querySelector(".popUpFirstButton");
-const secondButton = document.querySelector(".popUpSecondButton");
-const thirdButton = document.querySelector(".popUpThirdButton");
+var firstButton = document.querySelector(".popUpFirstButton");
+var secondButton = document.querySelector(".popUpSecondButton");
+var thirdButton = document.querySelector(".popUpThirdButton");
 
-const closeToday = document.querySelector(".closeToday");
-const closePopUp = document.querySelector(".popUpClose");
+var closeToday = document.querySelector(".closeToday");
+var closePopUp = document.querySelector(".popUpClose");
 
 function onFirstButtonClick() {
   first.classList.add("popUpShown");

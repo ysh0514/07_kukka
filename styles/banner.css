@@ -1,13 +1,3 @@
-body {
-  font-size: 12px;
-  line-height: 16px;
-  font-family: "Noto Sans KR", sans-serif, NanumGothic, "나눔고딕", Dotum,
-    "돋움", Helvetica, "Apple SD Gothic Neo";
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .storyWrapper {
   display: none;
 }
