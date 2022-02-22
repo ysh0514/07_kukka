@@ -1,8 +1,9 @@
-const header = document.querySelector(".headerContainer");
-const headerContainer = document.querySelector(".headerWidthContainer");
-const headerList = document.querySelector(".headerList");
-const headerVideo = document.querySelector(".headerVideo");
-const headerFlowerClass = document.querySelector(".headerFlowerClass");
+var header = document.querySelector(".headerContainer");
+var headerContainer = document.querySelector(".headerWidthContainer");
+var headerList = document.querySelector(".headerList");
+var headerVideo = document.querySelector(".headerVideo");
+var headerFlowerClass = document.querySelector(".headerFlowerClass");
+var body = document.querySelector("body");
 
 function onScroll() {
   if (window.pageYOffset > 200) {
@@ -14,8 +15,35 @@ function onScroll() {
   }
 }
 
+var count = 0;
+
 function onVideoScroll() {
-  window.scrollTo(0, 600);
+  if (count > 600) return;
+  setTimeout(() => {
+    window.scrollBy(0, 50);
+  }, 30);
+  setTimeout(() => {
+    window.scrollBy(0, 50);
+  }, 60);
+  setTimeout(() => {
+    window.scrollBy(0, 50);
+  }, 90);
+  setTimeout(() => {
+    window.scrollBy(0, 50);
+  }, 120);
+  setTimeout(() => {
+    window.scrollBy(0, 50);
+  }, 150);
+  setTimeout(() => {
+    window.scrollBy(0, 50);
+  }, 180);
+  setTimeout(() => {
+    window.scrollBy(0, 50);
+  }, 210);
+  setTimeout(() => {
+    window.scrollBy(0, 50);
+  }, 240);
+  count = 0;
 }
 
 function onFlowerClassScroll() {
