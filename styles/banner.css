@@ -67,7 +67,7 @@
 .bannerWrapper .bannerDescription {
   top: 34%;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 23px;
   letter-spacing: -0.21px;
   white-space: normal;
@@ -85,7 +85,7 @@
   -moz-border-radius: 25px;
   font-size: 14px;
   line-height: 48px;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: -0.21px;
 }
 
@@ -100,7 +100,6 @@
     top: 36%;
     font-size: 12px;
     line-height: 20px;
-    font-weight: 600;
   }
 
   .bannerDescription .bannerMore {
@@ -112,7 +111,6 @@
     -webkit-border-radius: 18px;
     -moz-border-radius: 18px;
     font-size: 12px;
-    font-weight: 600;
     line-height: 34px;
   }
 }
@@ -133,6 +131,7 @@
 
   .storyWrapper .storyTitle {
     font-size: 22px;
+    font-weight: 700;
     margin: 0;
     line-height: 34px;
     letter-spacing: -0.33px;
