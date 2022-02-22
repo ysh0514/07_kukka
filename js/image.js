@@ -1,4 +1,4 @@
-const productList = [
+var productList = [
   {
     productName: "플라워 클래스",
     productDescription: "매주 새로운 커리큘럼으로 배우는",
@@ -82,9 +82,9 @@ const productList = [
   },
 ];
 
-const topDescriptionBox = document.querySelector(".topDescriptionBox");
-const bottomDescriptionBox = document.querySelector(".bottomDescriptionBox");
-const firstLink = document.querySelector(".firstLink");
+var topDescriptionBox = document.querySelector(".topDescriptionBox");
+var bottomDescriptionBox = document.querySelector(".bottomDescriptionBox");
+var firstLink = document.querySelector(".firstLink");
 
 function changeProduct() {
   document.querySelector(".leftProductImg").src = productList[0].productImage;
@@ -95,16 +95,16 @@ function changeProduct() {
   document.querySelector(".secondLink").href = productList[1].productUrl;
   document.querySelector(".thirdLink").href = productList[2].productUrl;
 
-  const leftTopText = document.querySelector(".leftTopText");
-  const leftBottomText = document.querySelector(".leftBottomText");
+  var leftTopText = document.querySelector(".leftTopText");
+  var leftBottomText = document.querySelector(".leftBottomText");
   leftTopText.innerHTML = productList[0].productDescription;
   leftBottomText.innerHTML = productList[0].productName + "자세히 보기 >";
 
-  const firstTitle = document.createElement("a");
-  const firstDate = document.createElement("a");
-  const firstPrice = document.createElement("p");
-  const firstPlace = document.createElement("p");
-  const firstTags = document.createElement("ul");
+  var firstTitle = document.createElement("a");
+  var firstDate = document.createElement("a");
+  var firstPrice = document.createElement("p");
+  var firstPlace = document.createElement("p");
+  var firstTags = document.createElement("ul");
 
   firstTitle.href = firstDate.style.fontWeight = "600";
   firstTitle.style.fontWeight = "600";
@@ -119,7 +119,7 @@ function changeProduct() {
   firstPrice.innerHTML = productList[1].productPrice + "원";
 
   productList[1].productPlace.map((item) => {
-    const firstTag = document.createElement("li");
+    var firstTag = document.createElement("li");
     firstTag.innerText = item.place;
     firstTags.appendChild(firstTag);
     firstTag.style.color = item.color;
@@ -144,11 +144,11 @@ function changeProduct() {
   topDescriptionBox.appendChild(firstPlace);
   topDescriptionBox.appendChild(firstTags);
 
-  const secondTitle = document.createElement("a");
-  const secondDate = document.createElement("a");
-  const secondePrice = document.createElement("p");
-  const secondPlace = document.createElement("p");
-  const secondTags = document.createElement("ul");
+  var secondTitle = document.createElement("a");
+  var secondDate = document.createElement("a");
+  var secondePrice = document.createElement("p");
+  var secondPlace = document.createElement("p");
+  var secondTags = document.createElement("ul");
 
   secondDate.style.fontWeight = "600";
   secondTitle.style.fontWeight = "600";
@@ -163,7 +163,7 @@ function changeProduct() {
   secondePrice.innerHTML = productList[2].productPrice + "원";
 
   productList[2].productPlace.map((item) => {
-    const secondTag = document.createElement("li");
+    var secondTag = document.createElement("li");
     secondTag.innerText = item.place;
     secondTags.appendChild(secondTag);
     secondTag.style.color = item.color;
@@ -201,8 +201,8 @@ function removeProduct() {
 }
 changeProduct();
 
-const leftButton = document.querySelector(".leftButton");
-const rightButton = document.querySelector(".rightButton");
+var leftButton = document.querySelector(".leftButton");
+var rightButton = document.querySelector(".rightButton");
 
 function leftClick() {
   removeProduct();
