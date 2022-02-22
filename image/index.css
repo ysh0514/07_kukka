@@ -4,8 +4,38 @@
   padding: 0;
 }
 
-body {
+.buttonContainer {
+  position: relative;
+  width: 1350px;
+  margin: 0 auto;
 }
+
+.leftButton {
+  position: absolute;
+  left: 0;
+  margin-top: 330px;
+  color: grey;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 2px 6px rgba(200, 200, 200, 0.1);
+}
+
+.rightButton {
+  position: absolute;
+  right: 0;
+  margin-top: 330px;
+  color: grey;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 2px 6px rgba(200, 200, 200, 0.1);
+}
+
 .container {
   margin: 0 auto;
   width: 1120px;
@@ -69,16 +99,32 @@ body {
 }
 
 .rightTopProductBox {
+  display: flex;
   padding-bottom: 20px;
   height: 50%;
   border-bottom: 1px solid #d3d3d3;
 }
 
 .rightBottomProductBox {
+  display: flex;
   padding-top: 20px;
   height: 50%;
 }
 
-.rightProducts {
+.rightTopProduct {
+  width: 244px;
   height: 100%;
+}
+
+.rightBottomProduct {
+  width: 244px;
+  height: 100%;
+}
+
+.topDescriptionBox {
+  margin-left: 20px;
+}
+
+.bottomDescriptionBox {
+  margin-left: 20px;
 }
