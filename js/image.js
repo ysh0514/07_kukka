@@ -108,7 +108,7 @@ function changeProduct() {
 
   firstTitle.innerHTML = productList[1].productName;
   firstDate.innerHTML = productList[1].date;
-  firstPrice.innerHTML = productList[1].productPrice;
+  firstPrice.innerHTML = productList[1].productPrice + "원";
 
   productList[1].productPlace.map((item) => {
     const firstTag = document.createElement("li");
@@ -152,7 +152,7 @@ function changeProduct() {
 
   secondTitle.innerHTML = productList[2].productName;
   secondDate.innerHTML = productList[2].date;
-  secondePrice.innerHTML = productList[2].productPrice;
+  secondePrice.innerHTML = productList[2].productPrice + "원";
 
   productList[2].productPlace.map((item) => {
     const secondTag = document.createElement("li");
