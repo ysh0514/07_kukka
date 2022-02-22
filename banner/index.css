@@ -110,6 +110,7 @@ body {
     top: 36%;
     font-size: 12px;
     line-height: 20px;
+    font-weight: 600;
   }
 
   .bannerDescription .bannerMore {
@@ -121,6 +122,7 @@ body {
     -webkit-border-radius: 18px;
     -moz-border-radius: 18px;
     font-size: 12px;
+    font-weight: 600;
     line-height: 34px;
   }
 }
@@ -189,9 +191,8 @@ body {
     top: 26%;
     font-size: 14px;
     line-height: 20px;
-    font-weight: 500;
     letter-spacing: -0.21px;
-    text-align: start;
+    text-align: inherit;
   }
 
   .bannerWrapper .bannerDescription {
@@ -200,7 +201,7 @@ body {
     line-height: 20px;
     font-weight: 100;
     letter-spacing: -0.18px;
-    text-align: start;
+    text-align: inherit;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
   }
@@ -241,11 +242,7 @@ body {
   }
 
   .bannerSection #radioBrand:checked ~ .bannerContainer {
-    transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
+    margin-left: 0;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -253,11 +250,7 @@ body {
   }
 
   .bannerSection #radioOffline:checked ~ .bannerContainer {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
+    margin-left: -100%;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
