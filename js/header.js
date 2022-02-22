@@ -28,28 +28,36 @@ function onScrollUpMove() {
 }
 
 function onVideoMove() {
-  window.scrollTo(0, 100);
+  window.scrollTo(0, 0);
 }
 
 function onFlowerMove() {
-  window.scrollTo(0, 700);
+  window.scrollTo(0, 400);
 }
 
 function onVideoScroll() {
   if (window.pageYOffset < 100) {
-    setTimeout(onScrollMove, 50);
-    setTimeout(onScrollMove, 100);
+    setTimeout(onVideoMove, 100);
   } else if (window.pageYOffset > 100) {
+    setTimeout(onScrollUpMove, 10);
     setTimeout(onScrollUpMove, 20);
+    setTimeout(onScrollUpMove, 30);
     setTimeout(onScrollUpMove, 40);
+    setTimeout(onScrollUpMove, 50);
     setTimeout(onScrollUpMove, 60);
+    setTimeout(onScrollUpMove, 70);
     setTimeout(onScrollUpMove, 80);
+    setTimeout(onScrollUpMove, 90);
+    setTimeout(onScrollUpMove, 100);
+    setTimeout(onScrollUpMove, 120);
+    setTimeout(onScrollUpMove, 140);
+    setTimeout(onScrollUpMove, 160);
+    setTimeout(onVideoMove, 160);
   }
-  setTimeout(onVideoMove, 100);
 }
 
 function onFlowerClassScroll() {
-  if (window.pageYOffset < 700) {
+  if (window.pageYOffset < 400) {
     setTimeout(onScrollMove, 20);
     setTimeout(onScrollMove, 40);
     setTimeout(onScrollMove, 60);
@@ -58,14 +66,7 @@ function onFlowerClassScroll() {
     setTimeout(onScrollMove, 120);
     setTimeout(onScrollMove, 140);
     setTimeout(onScrollMove, 160);
-    setTimeout(onScrollMove, 180);
-    setTimeout(onScrollMove, 200);
-    setTimeout(onScrollMove, 220);
-    setTimeout(onScrollMove, 240);
-    setTimeout(onScrollMove, 260);
-    setTimeout(onScrollMove, 280);
-    setTimeout(onScrollMove, 300);
-  } else if (window.pageYOffset > 700) {
+  } else if (window.pageYOffset > 400) {
     setTimeout(onScrollUpMove, 20);
     setTimeout(onScrollUpMove, 40);
     setTimeout(onScrollUpMove, 60);
@@ -74,15 +75,8 @@ function onFlowerClassScroll() {
     setTimeout(onScrollUpMove, 120);
     setTimeout(onScrollUpMove, 140);
     setTimeout(onScrollUpMove, 160);
-    setTimeout(onScrollUpMove, 180);
-    setTimeout(onScrollUpMove, 200);
-    setTimeout(onScrollUpMove, 220);
-    setTimeout(onScrollUpMove, 240);
-    setTimeout(onScrollUpMove, 260);
-    setTimeout(onScrollUpMove, 280);
-    setTimeout(onScrollUpMove, 300);
   }
-  setTimeout(onFlowerMove, 300);
+  setTimeout(onFlowerMove, 160);
 }
 
 window.addEventListener("scroll", onScroll);
