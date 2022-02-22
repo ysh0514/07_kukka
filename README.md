@@ -50,7 +50,7 @@
 
 ### 크로스 브라우저
 
-- IE에서는 const, let을 지원하지 않아 var을 사용.
-- IE에서 작동하지 않는 scroll-behavior 을 setTimeout으로 비슷한 퍼포먼스를 내려고 하였음.
-- -webkit, -moz , -o 등 다양한 css 속성을 이용하여 많은 사용자들에게 동일한 성능을 보이고자 하였음.
+- IE8에서는 const, let을 지원하지 않아 var을 사용.
+- IE8에서 작동하지 않는 scroll-behavior 을 setTimeout으로 비슷한 퍼포먼스를 내려고 하였음.
+- -webkit(크롬, 사파리), -moz(파이어폭스) , -o(오페라) css 속성을 이용하여 다양한 브라우저(사용자들)에서 동일한 성능을 보이고자 하였음.
 
