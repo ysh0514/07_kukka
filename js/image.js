@@ -1,6 +1,7 @@
 const productList = [
   {
     productName: "플라워 클래스",
+    productDescription: "매주 새로운 커리큘럼으로 배우는",
     date: "(2/28~3/6)",
     productPrice: "63,000",
     productImage:
@@ -27,6 +28,7 @@ const productList = [
   },
   {
     productName: "오아시스 리스",
+    productDescription: "다양한 방식으로 공간을 연출하는",
     date: "(2/21~2/27)",
     productPrice: "79,000",
     productImage:
@@ -53,6 +55,7 @@ const productList = [
   },
   {
     productName: "클래식 핸드타이트",
+    productDescription: "화형이 또렷한 꽃으로 연출하는",
     date: "(2/18~2/22)",
     productPrice: "84,000",
     productImage:
@@ -91,6 +94,11 @@ function changeProduct() {
   firstLink.href = productList[0].productUrl;
   document.querySelector(".secondLink").href = productList[1].productUrl;
   document.querySelector(".thirdLink").href = productList[2].productUrl;
+
+  const leftTopText = document.querySelector(".leftTopText");
+  const leftBottomText = document.querySelector(".leftBottomText");
+  leftTopText.innerHTML = productList[0].productDescription;
+  leftBottomText.innerHTML = productList[0].productName + "자세히 보기 >";
 
   const firstTitle = document.createElement("a");
   const firstDate = document.createElement("a");
