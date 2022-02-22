@@ -1,20 +1,29 @@
-.headerContainer {
-  background-color: white;
-  color: black;
+.headerWidthContainer {
+  width: 100%;
   position: fixed;
   display: flex;
-  width: 1120px;
+  justify-content: center;
+  background-color: white;
+  z-index: 5555;
   height: 80px;
+}
+
+.headerContainer {
+  color: black;
+  display: flex;
+  height: 80px;
+  background-color: white;
+  width: 1120px;
   justify-content: space-between;
   align-items: center;
   transition: all 0.1s;
-  z-index: 5555;
 }
 
 .headerList {
   display: flex;
   width: 656px;
   justify-content: space-between;
+  background-color: white;
   align-items: center;
   align-items: center;
   font-size: 18px;
@@ -26,7 +35,7 @@
 
 .headerList li:hover {
   position: relative;
-  top: 2px;
+  top: 3px;
   line-height: 57px;
   border-bottom: 4px solid #ffca43;
 }
@@ -51,6 +60,7 @@
 .pcLogo {
   display: flex;
   height: 55px;
+  cursor: pointer;
 }
 
 .mobileLogo {
@@ -77,6 +87,7 @@
   .mediaBucket {
     display: flex;
     padding-right: 20px;
+    cursor: pointer;
   }
 
   .mediaHeader {
@@ -93,6 +104,7 @@
     height: 20px;
     position: relative;
     padding-left: 20px;
+    cursor: pointer;
   }
   .pcLogo {
     display: none;
@@ -117,12 +129,8 @@
     line-height: 0px;
     border-bottom: none;
   }
-}
-
-@media screen and (max-width: 767px) {
-  /* 모바일 */
-  iframe {
-    width: 640px;
-    height: 360px;
+  .headerScrollList {
+    display: none;
+    border-bottom: none;
   }
 }

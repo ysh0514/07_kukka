@@ -2,6 +2,7 @@
 @import "./styles/header.css";
 @import "./styles/iframe.css";
 @import "./styles/popUp.css";
+@import "./styles/banner.css";
 @import "./styles/footer.css";
 
 body {
@@ -12,4 +13,5 @@ body {
   font-family: "Noto Sans KR", sans-serif, "NanumGothic", "나눔고딕", "Dotum",
     "돋움", Helvetica, "Apple SD Gothic Neo";
   backface-visibility: hidden;
+  width: 100%;
 }
