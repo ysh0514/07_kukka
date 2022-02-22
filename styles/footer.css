@@ -11,6 +11,7 @@ dl,
 dt,
 li,
 ol,
+ul,
 p {
   margin: 0;
   padding: 0;
@@ -25,6 +26,7 @@ ul {
 
 a {
   outline-width: 1px;
+  text-decoration: none;
 }
 
 a:hover {
@@ -35,6 +37,11 @@ address {
   margin: 0;
   font-style: normal;
   line-height: inherit;
+}
+
+footer,
+nav {
+  display: block;
 }
 
 .footer {
@@ -51,7 +58,7 @@ address {
   z-index: 2;
 }
 
-.naviMobile .isFlowFooter {
+.naviMobile.isFlowFooter {
   position: relative;
   bottom: initial;
   left: initial;
@@ -81,13 +88,14 @@ address {
   text-align: center;
 }
 
-.naviMobile .link .dl.menu > span {
-  margin-top: 5px;
+.naviMobile .link .dl::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
 }
 
 .naviMobile .link .dl > span {
   display: block;
-  vertical-align: top;
   font-size: 10px;
   line-height: 15px;
   font-weight: 200;
@@ -95,7 +103,82 @@ address {
   color: #222;
 }
 
-.naviMobile .isFlowFooter + .footerWrap {
+.naviMobile .link .dl.menu::before {
+  background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+  background-size: 626px 422.5px;
+  width: 17px;
+  height: 13px;
+  background-position: -601px -275px;
+  margin-top: 3px;
+}
+
+.naviMobile .link .dl.menu > span {
+  margin-top: 5px;
+}
+
+.naviMobile .link .dl.event::before {
+  background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+  background-size: 626px 422.5px;
+  width: 24px;
+  height: 24px;
+  background-position: -601px -246px;
+  margin-top: -2px;
+}
+
+.naviMobile .link .dl.event > span {
+  margin-top: -1px;
+}
+
+.naviMobile .link .dl.my::before {
+  background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+  background-size: 626px 422.5px;
+  width: 24px;
+  height: 24px;
+  background-position: -401px -306px;
+  margin-top: -2px;
+}
+
+.naviMobile .link .dl.my > span {
+  margin-top: -1px;
+}
+
+.naviMobile .link .dl.cart {
+  position: relative;
+}
+
+.naviMobile .link .dl.cart::before {
+  background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+  background-size: 626px 422.5px;
+  width: 17px;
+  height: 19px;
+  background-position: -608px -76px;
+}
+
+.naviMobile .link .dl.cart > span {
+  margin-top: 2px;
+}
+
+.naviMobile .link .dl.cart .count {
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #ffcd32;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  letter-spacing: -0.21px;
+  color: #0d0d0d;
+}
+
+.naviMobile.isFlowFooter + .footerWrap {
   margin-top: 0 !important;
 }
 
@@ -291,8 +374,8 @@ address {
   background: #d3d3d3;
 }
 
-.footer .footerWrap .footerInner .about .only_pc {
-  display: block;
+.footer .footerWrap .footerInner .about .onlyPc {
+  display: none;
 }
 
 .footer .footerWrap .footerInner .about + .tems {
@@ -556,7 +639,7 @@ address {
     margin-right: 0;
   }
 
-  .footer .footerWrap .footerInner .about .only_pc {
+  .footer .footerWrap .footerInner .about .onlyPc {
     display: block;
   }
 
