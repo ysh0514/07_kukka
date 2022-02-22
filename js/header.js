@@ -8,42 +8,26 @@ var body = document.querySelector("body");
 function onScroll() {
   if (window.pageYOffset > 200) {
     headerContainer.classList.add("hasShadow");
-    headerList.classList.add("headerScrollList");
+    headerList.className = "headerList headerScrollList";
   } else {
     headerContainer.classList.remove("hasShadow");
-    headerList.classList.remove("headerScrollList");
+    headerList.className = "headerList";
   }
 }
-
-var count = 0;
-
+function onScrollMove() {
+  window.scrollBy(0, 50);
+}
 function onVideoScroll() {
-  if (count > 600) return;
-  setTimeout(() => {
-    window.scrollBy(0, 50);
-  }, 30);
-  setTimeout(() => {
-    window.scrollBy(0, 50);
-  }, 60);
-  setTimeout(() => {
-    window.scrollBy(0, 50);
-  }, 90);
-  setTimeout(() => {
-    window.scrollBy(0, 50);
-  }, 120);
-  setTimeout(() => {
-    window.scrollBy(0, 50);
-  }, 150);
-  setTimeout(() => {
-    window.scrollBy(0, 50);
-  }, 180);
-  setTimeout(() => {
-    window.scrollBy(0, 50);
-  }, 210);
-  setTimeout(() => {
-    window.scrollBy(0, 50);
-  }, 240);
-  count = 0;
+  setTimeout(onScrollMove, 30);
+  setTimeout(onScrollMove, 60);
+  setTimeout(onScrollMove, 90);
+  setTimeout(onScrollMove, 120);
+  setTimeout(onScrollMove, 150);
+  setTimeout(onScrollMove, 180);
+  setTimeout(onScrollMove, 210);
+  setTimeout(onScrollMove, 240);
+  setTimeout(onScrollMove, 270);
+  setTimeout(onScrollMove, 300);
 }
 
 function onFlowerClassScroll() {
