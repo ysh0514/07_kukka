@@ -64,6 +64,10 @@ a {
   font-weight: 350;
 }
 
+.strongText {
+  font-weight: 500;
+}
+
 .moreText {
   cursor: pointer;
 }
