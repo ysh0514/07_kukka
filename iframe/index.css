@@ -1,64 +1,35 @@
-@import "../reset.css";
 body {
+  min-block-size: 768px;
+  min-width: 768px;
+}
+/* 
+@media only screen and (max-width: 1024px) {
+  iframe {
+    width: 853px;
+    height: 480px;
+  }
+} */
+
+/* @media only screen and (max-width: 768px) {
+  iframe {
+    width: 640px;
+    height: 360px;
+  }
+}
+/* 1024px             768px  */
+
+@media screen and (max-width: 1023px) {
+  /* 타블렛 */
+  iframe {
+    width: 853px;
+    height: 480px;
+  }
 }
 
-.iframeContainer {
-  display: flex;
-  justify-content: center;
-}
-
-.iframeWrapper {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  overflow: scroll;
-}
-
-.mainBanner {
-}
-
-.iframeScreen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1920px;
-  height: 420px;
-  background-position: center;
-  background-size: cover;
-}
-
-.indexWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 32px;
-  border-radius: 16px;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-  font-size: 16px;
-}
-
-.bannerButton {
-  font-size: 16px;
-  width: 32px;
-  height: 32px;
-  border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-  font-weight: 100;
-}
-
-.bannerFunction {
-  z-index: 1;
-  position: relative;
-  top: 370px;
-  width: 145px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media screen and (max-width: 767px) {
+  /* 모바일 */
+  iframe {
+    width: 640px;
+    height: 360px;
+  }
 }

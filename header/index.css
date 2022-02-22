@@ -22,6 +22,10 @@ body {
   font-size: 18px;
 }
 
+.headerList li {
+  cursor: pointer;
+}
+
 .headerList li:hover {
   position: relative;
   top: 2px;
@@ -34,10 +38,93 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .hasShadow {
   transition: all 0.1s;
   border-bottom: 1px solid #ffca43;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.mediaBucket {
+  display: none;
+}
+.pcLogo {
+  display: flex;
+  height: 55px;
+}
+
+.mobileLogo {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  /* 타블렛 */
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .headerLogoWrapper {
+    width: 100%;
+    padding: 15px 0px;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(149, 157, 165, 0.2);
+  }
+  .mediaBucket {
+    display: flex;
+    padding-right: 20px;
+  }
+
+  .mediaHeader {
+    display: none;
+  }
+  .mediaHeader {
+    display: none;
+  }
+  .headerIcon {
+    display: none;
+  }
+  .mobileLogo {
+    display: flex;
+    height: 20px;
+    position: relative;
+    padding-left: 20px;
+  }
+  .pcLogo {
+    display: none;
+  }
+  .headerList {
+    padding: 15px 0px;
+    width: 100%;
+    border-bottom: 1px solid rgba(149, 157, 165, 0.2);
+  }
+
+  .headerList li:first-child {
+    padding-left: 50px;
+  }
+
+  .headerList li:nth-child(4) {
+    padding-right: 50px;
+  }
+
+  .headerList li:hover {
+    position: none;
+    top: 0px;
+    line-height: 0px;
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* 모바일 */
+  iframe {
+    width: 640px;
+    height: 360px;
+  }
 }
