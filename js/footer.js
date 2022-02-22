@@ -1,5 +1,5 @@
-const count = document.querySelector(".count");
-const onlyPc = document.querySelector(".onlyPc");
+var count = document.querySelector(".count");
+var onlyPc = document.querySelector(".onlyPc");
 
 function countCheck() {
   if (count.textContent === "0") {
