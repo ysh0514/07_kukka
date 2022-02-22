@@ -125,6 +125,7 @@ function changeProduct() {
     firstTag.style.marginRight = "4px";
     firstTag.style.marginBottom = "2px";
     firstTag.style.listStyle = "none";
+    firstTag.style.cursor = "pointer";
   });
 
   firstTitle.href = productList[1].productUrl;
@@ -169,6 +170,7 @@ function changeProduct() {
     secondTag.style.marginRight = "4px";
     secondTag.style.marginBottom = "2px";
     secondTag.style.listStyle = "none";
+    secondTag.style.cursor = "pointer";
   });
 
   secondTitle.href = productList[2].productUrl;
