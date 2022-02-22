@@ -5,6 +5,7 @@ const productList = [
     productPrice: "63,000",
     productImage:
       "https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/3/class_2022_home_web_R0tReO1.jpeg",
+    productUrl: "https://kukka.kr/class/contents/381/",
     productPlace: [
       {
         place: "광화문점",
@@ -30,6 +31,7 @@ const productList = [
     productPrice: "79,000",
     productImage:
       "https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ClassProductGroup/106/img_%EC%98%A4%EC%95%84%EC%8B%9C%EC%8A%A4-%EB%A6%AC%EC%8A%A4.jpg",
+    productUrl: "https://kukka.kr/class/contents/401/",
     productPlace: [
       {
         place: "광화문점",
@@ -55,6 +57,7 @@ const productList = [
     productPrice: "84,000",
     productImage:
       "https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ClassProductGroup/107/img_%ED%81%B4%EB%9E%98%EC%8B%9D-%ED%95%B8%EB%93%9C%ED%83%80%EC%9D%B4%EB%93%9C.jpg",
+    productUrl: "https://kukka.kr/class/contents/408/",
     productPlace: [
       {
         place: "광화문점",
@@ -78,92 +81,104 @@ const productList = [
 
 const topDescriptionBox = document.querySelector(".topDescriptionBox");
 const bottomDescriptionBox = document.querySelector(".bottomDescriptionBox");
+const firstLink = document.querySelector(".firstLink");
 
 function changeProduct() {
   document.querySelector(".leftProductImg").src = productList[0].productImage;
   document.querySelector(".rightTopProduct").src = productList[1].productImage;
   document.querySelector(".rightBottomProduct").src =
     productList[2].productImage;
+  firstLink.href = productList[0].productUrl;
+  document.querySelector(".secondLink").href = productList[1].productUrl;
+  document.querySelector(".thirdLink").href = productList[2].productUrl;
 
-  const title = document.createElement("strong");
-  const dataText = document.createElement("strong");
-  const price = document.createElement("p");
-  const place = document.createElement("p");
-  const tags = document.createElement("ul");
+  const firstTitle = document.createElement("a");
+  const firstDate = document.createElement("a");
+  const firstPrice = document.createElement("p");
+  const firstPlace = document.createElement("p");
+  const firstTags = document.createElement("ul");
 
-  price.style.fontWeight = "600";
-  price.style.fontSize = "14px";
-  price.style.marginTop = "10px";
-  tags.style.display = "flex";
-  tags.style.marginTop = "10px";
+  firstTitle.href = firstDate.style.fontWeight = "600";
+  firstTitle.style.fontWeight = "600";
+  firstPrice.style.fontWeight = "600";
+  firstPrice.style.fontSize = "14px";
+  firstPrice.style.marginTop = "10px";
+  firstTags.style.display = "flex";
+  firstTags.style.marginTop = "10px";
 
-  title.innerHTML = productList[1].productName;
-  dataText.innerHTML = productList[1].date;
-  price.innerHTML = productList[1].productPrice;
+  firstTitle.innerHTML = productList[1].productName;
+  firstDate.innerHTML = productList[1].date;
+  firstPrice.innerHTML = productList[1].productPrice;
 
   productList[1].productPlace.map((item) => {
-    const tag = document.createElement("li");
-    tag.innerText = item.place;
-    tags.appendChild(tag);
-    tag.style.color = item.color;
-    tag.style.textAlign = "center";
-    tag.style.fontSize = "10px";
-    tag.style.lineHeight = "20px";
-    tag.style.fontWeight = "300";
-    tag.style.border = `1px solid ${item.color}`;
-    tag.style.borderRadius = "10px";
-    tag.style.padding = "0 8px";
-    tag.style.marginRight = "4px";
-    tag.style.marginBottom = "2px";
-    tag.style.listStyle = "none";
+    const firstTag = document.createElement("li");
+    firstTag.innerText = item.place;
+    firstTags.appendChild(firstTag);
+    firstTag.style.color = item.color;
+    firstTag.style.textAlign = "center";
+    firstTag.style.fontSize = "10px";
+    firstTag.style.lineHeight = "20px";
+    firstTag.style.fontWeight = "300";
+    firstTag.style.border = `1px solid ${item.color}`;
+    firstTag.style.borderRadius = "10px";
+    firstTag.style.padding = "0 8px";
+    firstTag.style.marginRight = "4px";
+    firstTag.style.marginBottom = "2px";
+    firstTag.style.listStyle = "none";
   });
 
-  topDescriptionBox.appendChild(title);
-  topDescriptionBox.appendChild(dataText);
-  topDescriptionBox.appendChild(price);
-  topDescriptionBox.appendChild(place);
-  topDescriptionBox.appendChild(tags);
+  firstTitle.href = productList[1].productUrl;
+  firstDate.href = productList[1].productUrl;
 
-  // 2번째
+  topDescriptionBox.appendChild(firstTitle);
+  topDescriptionBox.appendChild(firstDate);
+  topDescriptionBox.appendChild(firstPrice);
+  topDescriptionBox.appendChild(firstPlace);
+  topDescriptionBox.appendChild(firstTags);
 
-  const title2 = document.createElement("strong");
-  const dataText2 = document.createElement("strong");
-  const price2 = document.createElement("p");
-  const place2 = document.createElement("p");
-  const tags2 = document.createElement("ul");
+  const secondTitle = document.createElement("a");
+  const secondDate = document.createElement("a");
+  const secondePrice = document.createElement("p");
+  const secondPlace = document.createElement("p");
+  const secondTags = document.createElement("ul");
 
-  price2.style.fontWeight = "600";
-  price2.style.fontSize = "14px";
-  price2.style.marginTop = "10px";
-  tags2.style.display = "flex";
-  tags2.style.marginTop = "10px";
+  secondDate.style.fontWeight = "600";
+  secondTitle.style.fontWeight = "600";
+  secondePrice.style.fontWeight = "600";
+  secondePrice.style.fontSize = "14px";
+  secondePrice.style.marginTop = "10px";
+  secondTags.style.display = "flex";
+  secondTags.style.marginTop = "10px";
 
-  title2.innerHTML = productList[2].productName;
-  dataText2.innerHTML = productList[2].date;
-  price2.innerHTML = productList[2].productPrice;
+  secondTitle.innerHTML = productList[2].productName;
+  secondDate.innerHTML = productList[2].date;
+  secondePrice.innerHTML = productList[2].productPrice;
 
   productList[2].productPlace.map((item) => {
-    const tag2 = document.createElement("li");
-    tag2.innerText = item.place;
-    tags2.appendChild(tag2);
-    tag2.style.color = item.color;
-    tag2.style.textAlign = "center";
-    tag2.style.fontSize = "10px";
-    tag2.style.lineHeight = "20px";
-    tag2.style.fontWeight = "300";
-    tag2.style.border = `1px solid ${item.color}`;
-    tag2.style.borderRadius = "10px";
-    tag2.style.padding = "0 8px";
-    tag2.style.marginRight = "4px";
-    tag2.style.marginBottom = "2px";
-    tag2.style.listStyle = "none";
+    const secondTag = document.createElement("li");
+    secondTag.innerText = item.place;
+    secondTags.appendChild(secondTag);
+    secondTag.style.color = item.color;
+    secondTag.style.textAlign = "center";
+    secondTag.style.fontSize = "10px";
+    secondTag.style.lineHeight = "20px";
+    secondTag.style.fontWeight = "300";
+    secondTag.style.border = `1px solid ${item.color}`;
+    secondTag.style.borderRadius = "10px";
+    secondTag.style.padding = "0 8px";
+    secondTag.style.marginRight = "4px";
+    secondTag.style.marginBottom = "2px";
+    secondTag.style.listStyle = "none";
   });
 
-  bottomDescriptionBox.appendChild(title2);
-  bottomDescriptionBox.appendChild(dataText2);
-  bottomDescriptionBox.appendChild(price2);
-  bottomDescriptionBox.appendChild(place2);
-  bottomDescriptionBox.appendChild(tags2);
+  secondTitle.href = productList[2].productUrl;
+  secondDate.href = productList[2].productUrl;
+
+  bottomDescriptionBox.appendChild(secondTitle);
+  bottomDescriptionBox.appendChild(secondDate);
+  bottomDescriptionBox.appendChild(secondePrice);
+  bottomDescriptionBox.appendChild(secondPlace);
+  bottomDescriptionBox.appendChild(secondTags);
 }
 
 function removeAllChildNodes(parent) {

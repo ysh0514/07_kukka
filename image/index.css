@@ -4,6 +4,15 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.imageComponetContainer {
+  position: relative;
+}
+
 .buttonContainer {
   position: relative;
   width: 1350px;
@@ -38,7 +47,7 @@
 
 .container {
   margin: 0 auto;
-  width: 1120px;
+  max-width: 1120px;
 }
 
 .titleAndMore {
@@ -54,6 +63,10 @@
   font-weight: 350;
 }
 
+.moreText {
+  cursor: pointer;
+}
+
 .productContainer {
   display: flex;
   justify-content: space-between;
@@ -65,6 +78,7 @@
   position: relative;
   width: 100%;
   height: 380px;
+  overflow: hidden;
 }
 
 .leftProductImg {
@@ -72,14 +86,13 @@
   height: 100%;
 }
 
-.leftTopText {
-  position: absolute;
-  z-index: 1000;
-  left: 30px;
-  bottom: 60px;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 350;
+.leftProductImg:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transition: all 0.5s ease;
 }
 
 .leftBottomText {
@@ -90,6 +103,15 @@
   font-size: 25px;
   line-height: 37px;
   font-weight: 700;
+}
+
+.leftTopText {
+  position: absolute;
+  left: 30px;
+  bottom: 60px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 350;
 }
 
 .rightProductContainer {
@@ -111,14 +133,30 @@
   height: 50%;
 }
 
-.rightTopProduct {
+.productImageWrapper {
   width: 244px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.rightTopProduct {
+  width: 100%;
   height: 100%;
 }
 
 .rightBottomProduct {
-  width: 244px;
+  width: 100%;
   height: 100%;
+}
+
+.rightTopProduct:hover,
+.rightBottomProduct:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transition: all 0.5s ease;
 }
 
 .topDescriptionBox {
@@ -127,4 +165,96 @@
 
 .bottomDescriptionBox {
   margin-left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .buttonContainer {
+    display: none;
+  }
+
+  .container {
+    padding: 40px 20px;
+  }
+
+  .productContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  .moreText {
+    display: none;
+  }
+
+  .titleAndMore {
+    display: flex;
+    padding-top: 0px;
+  }
+
+  .titleText {
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 350;
+  }
+
+  .rightProductContainer {
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .leftProductBox {
+    position: relative;
+    max-width: 984px;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .leftTopText {
+    position: absolute;
+    z-index: 1000;
+    left: 30px;
+    bottom: 80px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 350;
+  }
+
+  .leftBottomText {
+    position: absolute;
+    z-index: 1000;
+    left: 30px;
+    bottom: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .leftProductImg {
+    width: 100%;
+  }
+
+  .productImageWrapper {
+    width: 144px;
+    overflow: hidden;
+  }
+
+  .rightTopProduct {
+    width: 100%;
+    height: 100%;
+  }
+
+  .rightBottomProduct {
+    width: 100%;
+    height: 100%;
+  }
+
+  .rightProductContainer {
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
 }
