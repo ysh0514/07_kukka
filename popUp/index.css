@@ -1,5 +1,75 @@
 body {
-  background-color: blue;
+}
+
+.popUpContainer {
+  width: 540px;
+  height: 700px;
+  position: relative;
+}
+
+.popUpContainer img {
+  height: 100%;
+}
+.popUpNotice {
+  display: flex;
+  align-items: center;
+}
+
+.popUpNotice span {
+  font-size: 18px;
+}
+
+.popUpNotice input[type="checkbox"] {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.popUpFunction {
+  position: relative;
+  top: -4px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: white;
-  font-size: 50px;
+  background-color: #1c1c1c;
+}
+
+.popUpClose {
+  font-size: 30px;
+}
+
+.popUpUnShown {
+  width: 540px;
+  display: none;
+}
+
+.popUpShown {
+  width: 540px;
+  display: flex;
+}
+
+.popUpButton {
+  display: flex;
+  z-index: 1;
+  width: 50px;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  bottom: 20px;
+}
+
+.popUpIndex {
+  background-color: #bdbdbd;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.popUpSelected {
+  background-color: #cf343f;
 }
