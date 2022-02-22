@@ -98,7 +98,7 @@ function changeProduct() {
   var leftTopText = document.querySelector(".leftTopText");
   var leftBottomText = document.querySelector(".leftBottomText");
   leftTopText.innerHTML = productList[0].productDescription;
-  leftBottomText.innerHTML = productList[0].productName + "자세히 보기 >";
+  leftBottomText.innerHTML = productList[0].productName + " 자세히 보기 >";
 
   var firstTitle = document.createElement("a");
   var firstDate = document.createElement("a");
