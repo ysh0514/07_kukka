@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.imageComponetContainer {
+  position: relative;
+}
+
+.buttonContainer {
+  position: relative;
+  width: 1350px;
+  margin: 0 auto;
+}
+
+.leftButton {
+  position: absolute;
+  left: 0;
+  margin-top: 330px;
+  color: grey;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 2px 6px rgba(200, 200, 200, 0.1);
+}
+
+.rightButton {
+  position: absolute;
+  right: 0;
+  margin-top: 330px;
+  color: grey;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 2px 6px rgba(200, 200, 200, 0.1);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1120px;
+  color: #222;
+}
+
+.titleAndMore {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 90px;
+}
+
+.titleText {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 350;
+}
+
+.moreText {
+  cursor: pointer;
+}
+
+.productContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+
+.leftProductBox {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+}
+
+.leftProductImg {
+  width: 549px;
+  height: 100%;
+}
+
+.leftProductImg:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+
+.leftBottomText {
+  position: absolute;
+  z-index: 1000;
+  left: 30px;
+  bottom: 20px;
+  font-size: 25px;
+  line-height: 37px;
+  font-weight: 700;
+}
+
+.leftTopText {
+  position: absolute;
+  left: 30px;
+  bottom: 60px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 350;
+}
+
+.rightProductContainer {
+  width: 100%;
+  height: 380px;
+  margin-left: 21px;
+}
+
+.rightTopProductBox {
+  display: flex;
+  padding-bottom: 20px;
+  height: 50%;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.rightBottomProductBox {
+  display: flex;
+  padding-top: 20px;
+  height: 50%;
+}
+
+.productImageWrapper {
+  width: 244px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.rightTopProduct {
+  width: 100%;
+  height: 100%;
+}
+
+.rightBottomProduct {
+  width: 100%;
+  height: 100%;
+}
+
+.rightTopProduct:hover,
+.rightBottomProduct:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+
+.topDescriptionBox {
+  margin-left: 20px;
+}
+
+.bottomDescriptionBox {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .buttonContainer {
+    display: none;
+  }
+
+  .container {
+    padding: 40px 20px;
+  }
+
+  .productContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  .moreText {
+    display: none;
+  }
+
+  .titleAndMore {
+    display: flex;
+    padding-top: 0px;
+  }
+
+  .titleText {
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 350;
+  }
+
+  .rightProductContainer {
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .leftProductBox {
+    position: relative;
+    max-width: 984px;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .leftTopText {
+    position: absolute;
+    z-index: 1000;
+    left: 30px;
+    bottom: 80px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 350;
+  }
+
+  .leftBottomText {
+    position: absolute;
+    z-index: 1000;
+    left: 30px;
+    bottom: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .leftProductImg {
+    width: 100%;
+  }
+
+  .productImageWrapper {
+    width: 144px;
+    overflow: hidden;
+  }
+
+  .rightTopProduct {
+    width: 100%;
+    height: 100%;
+  }
+
+  .rightBottomProduct {
+    width: 100%;
+    height: 100%;
+  }
+
+  .rightProductContainer {
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}

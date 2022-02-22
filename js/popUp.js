@@ -1,4 +1,3 @@
-console.log("연결");
 var popUpContainer = document.querySelector(".popUpContainer");
 
 var first = document.querySelector(".popUpFirst");

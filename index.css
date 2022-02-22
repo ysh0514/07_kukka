@@ -1,8 +1,10 @@
 @import "./styles/reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@500&display=swap");
 @import "./styles/header.css";
 @import "./styles/iframe.css";
 @import "./styles/popUp.css";
 @import "./styles/banner.css";
+@import "./styles/image.css";
 @import "./styles/footer.css";
 
 body {
