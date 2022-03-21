@@ -1,0 +1,138 @@
+.headerWidthContainer {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  z-index: 5555;
+  height: 80px;
+}
+
+.headerContainer {
+  color: #222;
+  display: flex;
+  width: 1120px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.headerList {
+  display: flex;
+  width: 656px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.headerList li {
+  cursor: pointer;
+}
+
+.headerList li:hover {
+  position: relative;
+  top: 2px;
+  line-height: 57px;
+  border-bottom: 4px solid #ffca43;
+}
+
+.headerIcon {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hasShadow {
+  transition: all 0.1s;
+  border-bottom: 1px solid #ffca43;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.mediaBucket {
+  display: none;
+}
+.pcLogo {
+  display: flex;
+  height: 55px;
+  cursor: pointer;
+}
+
+.mobileLogo {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  /* 타블렛 */
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 40px; */
+  }
+
+  .headerLogoWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(149, 157, 165, 0.2);
+  }
+  .mediaBucket {
+    display: flex;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+
+  .mediaHeader {
+    display: none;
+  }
+  .mediaHeader {
+    display: none;
+  }
+  .headerIcon {
+    display: none;
+  }
+  .mobileLogo {
+    display: flex;
+    height: 20px;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+  }
+  .pcLogo {
+    display: none;
+  }
+  .headerList {
+    padding: 15px 0px;
+    width: 100%;
+    border-bottom: 1px solid rgba(149, 157, 165, 0.2);
+    font-size: 14px;
+    background-color: white;
+    color: #7d7d7d;
+  }
+
+  .headerList li:first-child {
+    padding-left: 50px;
+  }
+
+  .headerList li:nth-child(4) {
+    padding-right: 50px;
+  }
+
+  .headerList li:hover {
+    position: none;
+    top: 0px;
+    line-height: 0px;
+    border-bottom: none;
+  }
+  .headerScrollList {
+    display: none;
+  }
+  .headerHeight {
+    height: 40px;
+    border-bottom: 1px solid #ffca43;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+}

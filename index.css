@@ -1,0 +1,19 @@
+@import "./styles/reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@500&display=swap");
+@import "./styles/header.css";
+@import "./styles/iframe.css";
+@import "./styles/popUp.css";
+@import "./styles/banner.css";
+@import "./styles/image.css";
+@import "./styles/footer.css";
+
+body {
+  background-color: white;
+  color: white;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Noto Sans KR", sans-serif, "NanumGothic", "나눔고딕", "Dotum",
+    "돋움", Helvetica, "Apple SD Gothic Neo";
+  backface-visibility: hidden;
+  width: 100%;
+}

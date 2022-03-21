@@ -1,0 +1,665 @@
+footer {
+  display: block;
+}
+
+nav {
+  display: block;
+}
+
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.5px;
+  outline-width: 1px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  outline-width: 1px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+address {
+  margin: 0;
+  font-style: normal;
+  line-height: inherit;
+}
+
+footer,
+nav {
+  display: block;
+}
+
+.footer {
+  color: #3a3a3a;
+  background: #fff;
+}
+
+.naviMobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 2;
+}
+
+.naviMobile.isFlowFooter {
+  position: relative;
+  bottom: initial;
+  left: initial;
+}
+
+.naviMobile .link {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.naviMobile .link .list {
+  flex-grow: 1;
+}
+
+.naviMobile .link .dl {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: 0 0;
+  outline: 0;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 52px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.naviMobile .link .dl::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+}
+
+.naviMobile .link .dl > span {
+  display: block;
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 200;
+  letter-spacing: -0.15px;
+  color: #222;
+}
+
+.naviMobile .link .dl.menu::before {
+  background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+  background-size: 626px 422.5px;
+  width: 17px;
+  height: 13px;
+  background-position: -601px -275px;
+  margin-top: 3px;
+}
+
+.naviMobile .link .dl.menu > span {
+  margin-top: 5px;
+}
+
+.naviMobile .link .dl.event::before {
+  background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+  background-size: 626px 422.5px;
+  width: 24px;
+  height: 24px;
+  background-position: -601px -246px;
+  margin-top: -2px;
+}
+
+.naviMobile .link .dl.event > span {
+  margin-top: -1px;
+}
+
+.naviMobile .link .dl.my::before {
+  background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+  background-size: 626px 422.5px;
+  width: 24px;
+  height: 24px;
+  background-position: -401px -306px;
+  margin-top: -2px;
+}
+
+.naviMobile .link .dl.my > span {
+  margin-top: -1px;
+}
+
+.naviMobile .link .dl.cart {
+  position: relative;
+}
+
+.naviMobile .link .dl.cart::before {
+  background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+  background-size: 626px 422.5px;
+  width: 17px;
+  height: 19px;
+  background-position: -608px -76px;
+}
+
+.naviMobile .link .dl.cart > span {
+  margin-top: 2px;
+}
+
+.naviMobile .link .dl.cart .count {
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #ffcd32;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  letter-spacing: -0.21px;
+  color: #0d0d0d;
+}
+
+.naviMobile.isFlowFooter + .footerWrap {
+  margin-top: 0 !important;
+}
+
+.footer .footerWrap {
+  margin-top: 52px;
+  padding: 80px 20px;
+  background-color: #222;
+}
+
+.footer .footerWrap .footerInner {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.footer .footerWrap .footerInner .sectSns {
+  position: relative;
+  margin-left: -10px;
+}
+
+.footer .footerWrap .footerInner .sectSns::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.footer .footerWrap .footerInner .sectSns .sns {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: 0 0;
+  outline: 0;
+  cursor: pointer;
+  float: left;
+  display: block;
+  width: 44px;
+  height: 44px;
+}
+
+.footer .footerWrap .footerInner .sectSns .sns::before {
+  content: "";
+  display: block;
+  margin: 10px 0 0 10px;
+}
+
+.footer .footerWrap .footerInner .sectSns .sns.f::before {
+  background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+  background-size: 626px 422.5px;
+  width: 24px;
+  height: 24px;
+  background-position: -575px -306px;
+}
+
+.footer .footerWrap .footerInner .sectSns .sns.i::before {
+  background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+  background-size: 626px 422.5px;
+  width: 24px;
+  height: 24px;
+  background-position: -256px -306px;
+}
+
+.footer .footerWrap .footerInner .sectSns .sns.y::before {
+  background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+  background-size: 626px 422.5px;
+  width: 33px;
+  height: 24px;
+  background-position: -218px -306px;
+}
+
+.footer .footerWrap .footerInner .sectSns + .contact {
+  margin-top: 14px;
+}
+
+.footer .footerWrap .footerInner .contact {
+  display: block;
+}
+
+.footer .footerWrap .footerInner .contact dt {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  letter-spacing: -0.27px;
+  color: #f7f7f7;
+}
+
+.footer .footerWrap .footerInner .contact dt + dd.f {
+  margin-left: 20px;
+}
+
+.footer .footerWrap .footerInner .contact dd.f {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 300;
+  letter-spacing: -0.27px;
+  color: #f7f7f7;
+}
+
+.footer .footerWrap .footerInner .contact dd.f + dd.s {
+  margin-left: 10px;
+}
+
+.footer .footerWrap .footerInner .contact dd.s {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  letter-spacing: -0.18px;
+  color: #9b9b9b;
+}
+
+.footer .footerWrap .footerInner .contact dd.s.addPartnerTel {
+  padding: 5px 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  font-weight: 100;
+}
+
+.footer .footerWrap .footerInner .contact + .faq {
+  margin-top: 15px;
+}
+
+.footer .footerWrap .footerInner .faq {
+  display: block;
+}
+
+.footer .footerWrap .footerInner .faq::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.footer .footerWrap .footerInner .faq .link {
+  float: left;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: 0 0;
+  outline: 0;
+  display: block;
+  height: 36px;
+  padding: 0 20px;
+  border: #9b9b9b 1px solid;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 36px;
+  font-weight: 300;
+  letter-spacing: -0.18px;
+  color: #fff;
+}
+
+.footer .footerWrap .footerInner .faq + .about {
+  margin-top: 15px;
+}
+
+.footer .footerWrap .footerInner .about {
+  padding: 15px 0 0;
+  border-top: #787878 1px solid;
+}
+
+.footer .footerWrap .footerInner .about > dd {
+  position: relative;
+  display: inline-block;
+  margin-right: 14px;
+  font-size: 11px;
+  line-height: 19px;
+  font-weight: 300;
+  letter-spacing: -0.17px;
+  color: #d3d3d3;
+}
+
+.footer .footerWrap .footerInner .about > dd > a {
+  color: #d3d3d3;
+}
+
+.footer .footerWrap .footerInner .about > dd:last-of-type {
+  margin-right: 0;
+}
+
+.footer .footerWrap .footerInner .about > dd::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: -9px;
+  width: 1px;
+  height: 11px;
+  background: #d3d3d3;
+}
+
+.footer .footerWrap .footerInner .about .onlyPc {
+  display: none;
+}
+
+.footer .footerWrap .footerInner .about + .tems {
+  margin-top: 30px;
+}
+
+.footer .footerWrap .footerInner .tems {
+  display: block;
+}
+
+.footer .footerWrap .footerInner .tems .link {
+  float: left;
+  display: block;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: -0.18px;
+  color: #fff;
+}
+
+.footer .footerWrap .footerInner .tems .link + .link {
+  margin-left: 30px;
+}
+
+.footer .footerWrap .footerInner .tems::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    background-color: #222;
+  }
+
+  .naviMobile {
+    display: none;
+  }
+
+  .naviMobile .isFlowFooter {
+    position: relative;
+    bottom: initial;
+    left: initial;
+  }
+
+  .footer .footerWrap {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  .footer .footerWrap .footerInner {
+    margin: 0;
+    padding: 80px 0;
+  }
+
+  .footer .footerWrap .footerInner::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .footer .footerWrap .footerInner .sectSns {
+    margin-left: 0;
+  }
+
+  .footer .footerWrap .footerInner .sectSns::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .footer .footerWrap .footerInner .sectSns .sns {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer .footerWrap .footerInner .sectSns .sns::before {
+    margin: 0;
+  }
+
+  .footer .footerWrap .footerInner .sectSns .sns.f::before {
+    background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+    background-position: -42px -775px;
+    width: 32px;
+    height: 32px;
+    background-size: 1252px 845px;
+  }
+
+  .footer .footerWrap .footerInner .sectSns .sns.i:before {
+    background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+    background-position: -1214px -438px;
+    width: 32px;
+    height: 32px;
+    background-size: 1252px 845px;
+  }
+
+  .footer .footerWrap .footerInner .sectSns .sns.y:before {
+    background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+    background-position: -1164px -685px;
+    width: 32px;
+    height: 32px;
+    background-size: 1252px 845px;
+  }
+
+  .footer .footerWrap .footerInner .sectSns .sns + .sns {
+    margin-left: 20px;
+  }
+
+  .footer .footerWrap .footerInner .sectSns .sns {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer .footerWrap .footerInner .sectSns + .contact {
+    margin-top: 14px;
+  }
+
+  .footer .footerWrap .footerInner .contact {
+    float: left;
+  }
+
+  .footer .footerWrap .footerInner .contact dt {
+    float: left;
+    display: block;
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 500;
+    letter-spacing: -0.33px;
+    color: #f7f7f7;
+  }
+
+  .footer .footerWrap .footerInner .contact dt + dd.f {
+    margin-left: 20px;
+  }
+
+  .footer .footerWrap .footerInner .contact dd.f {
+    float: left;
+    display: block;
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 300;
+    letter-spacing: -0.33px;
+  }
+
+  .footer .footerWrap .footerInner .contact dd.f + dd.s {
+    margin-left: 10px;
+  }
+
+  .footer .footerWrap .footerInner .contact dd.s {
+    float: left;
+    display: block;
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 33px;
+    font-weight: 300;
+    letter-spacing: -0.21px;
+  }
+
+  .footer .footerWrap .footerInner .contact dd.s.addPartnerTel {
+    float: none;
+    clear: both;
+    padding: 5px 0 0;
+  }
+
+  .footer .footerWrap .footerInner .contact::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .footer .footerWrap .footerInner .contact + .faq {
+    margin-top: 12px;
+    margin-left: 17px;
+  }
+
+  .footer .footerWrap .footerInner .faq {
+    float: left;
+  }
+
+  .footer .footerWrap .footerInner .faq .link {
+    padding: 0 20px;
+    border: #9b9b9b 1px solid;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+  }
+
+  .footer .footerWrap .footerInner .faq::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .footer .footerWrap .footerInner .faq + .about {
+    margin-top: 20px;
+  }
+
+  .footer .footerWrap .footerInner .about {
+    clear: both;
+    position: relative;
+    padding: 40px 0 0;
+    border-top: none;
+  }
+
+  .footer .footerWrap .footerInner .about::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #444;
+  }
+
+  .footer .footerWrap .footerInner .about .logo {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    background-image: url("https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png");
+    background-position: 0 -612px;
+    width: 150px;
+    height: 63px;
+    background-size: 1252px 845px;
+  }
+
+  .footer .footerWrap .footerInner .about > dd {
+    margin-right: 18px;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    letter-spacing: -0.21px;
+  }
+
+  .footer .footerWrap .footerInner .about > dd::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: -10px;
+    width: 1px;
+    height: 13px;
+  }
+
+  .footer .footerWrap .footerInner .about > dd.end {
+    margin-right: 0;
+  }
+
+  .footer .footerWrap .footerInner .about .onlyPc {
+    display: block;
+  }
+
+  .footer .footerWrap .footerInner .about + .tems {
+    margin-top: 0;
+  }
+
+  .footer .footerWrap .footerInner .tems {
+    display: block;
+  }
+
+  .footer .footerWrap .footerInner .tems .link {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 200;
+    letter-spacing: -0.21px;
+  }
+
+  .footer .footerWrap .footerInner .tems .link + .link {
+    margin-left: 25px;
+  }
+}
